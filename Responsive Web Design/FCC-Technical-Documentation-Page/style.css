@@ -1,0 +1,123 @@
+:root {
+    --bg-1: #303133;
+    --col-1: white;
+    --col-2: black;
+  }
+  * {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--bg-1);
+    margin: 0;
+    padding: 0;
+    color: var(--col-1);
+    line-height: 1.5;
+  }
+  #toggle-btn {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+  }
+  #navbar {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 5px;
+    background-color: #24282a;
+    padding-top: 1.6rem;
+  }
+  #navbar header {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    cursor: pointer;
+  }
+  #navbar a {
+    text-decoration: none;
+    color: var(--col-1);
+  }
+  #navbar ul {
+    height: 90%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style: none;
+  }
+  
+  #navbar li {
+    font-size: 1.2rem;
+    height: 3rem;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+  }
+  #navbar .end-li {
+    margin-bottom: 15px;
+  }
+  #navbar a {
+    display: block;
+    padding: 10px 30px;
+  }
+  #navbar li:hover {
+    background-color: var(--col-2);
+  }
+  #main-doc {
+    margin-left: 300px;
+    padding: 20px;
+  }
+  #main-doc header {
+    font-size: 2rem;
+  }
+  section article {
+    margin: 15px;
+    font-size: 17px;
+  }
+  section li {
+    margin: 20px 0;
+  }
+  code {
+    font-size: 14px;
+    display: block;
+    white-space: pre-line;
+    position: relative;
+    line-height: 2;
+    background-color: var(--col-2);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    z-index: -1;
+  }
+  section a {
+    color: #5476d3;
+    font-weight: bold;
+  }
+  @media (max-width: 850px) {
+    #toggle-btn {
+      display: block;
+    }
+    #navbar {
+      display: none;
+    }
+    #main-doc {
+      margin-left: 0;
+    }
+    #navbar.active {
+      display: block;
+    }
+  }
+  @media (max-width:450px) {
+    code {
+      margin-left: -35px;
+      width: 100vw;
+      padding: 10px;
+      font-size: 12px;
+    }
+  }

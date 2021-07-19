@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d2b2b614d0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>FCC Product Landing Page by Devmdmamun</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <header id="header">
+        <div class="img-div">
+          <img id="header-img" src="image/logo.png" alt="Logo Image" />
+        </div>
+        <a id="toggle-btn">
+          <i class="fas fa-bars"></i>
+        </a>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#home-section">Home</a></li>
+            <li><a class="nav-link" href="#feature">Features</a></li>
+            <li><a class="nav-link" href="#prising-section">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="container">
+      <section id="home-section">
+        <div id="home-elements">
+          <h1 id="main-h1"><span class="theme-color">Buenos</span> días</h1>
+          <h2 id="main-h2">Bring Your Natural Beauty.</h2>
+          <div class="get-started">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Your Email *"
+                required
+              />
+              <input id="submit" type="submit" value="SUBSCRIBE" />
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="feature">
+        <iframe
+          id="video"
+          height="315"
+          src="https://www.youtube.com/embed/jsjnBwOJPdI?controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="prising-section">
+        <div class="pricing-h2">
+          <h2 id="pricing-h2">Pricing</h2>
+        </div>
+        <div class="prising-row">
+          <div id="prising-column-1" class="prising-column">
+            <div class="prising-column-second-div">
+              <h2 class="prising-name">Basic</h2>
+              <h2 class="price">15$</h2>
+              <h4 class="monthly-prising">Monthly</h4>
+              <p class="prising-para">
+                Discover your way to effortless weight loss, vibrant health
+              </p>
+              <div class="prising-btn">
+                <a class="prising-btn-a" href="#">PURCHASE</a>
+              </div>
+            </div>
+          </div>
+          <div id="prising-column-2" class="prising-column">
+            <div class="prising-column-second-div">
+              <h2 id="prising-name-2" class="prising-name unselectable">
+                Basic Plus
+              </h2>
+              <h2 class="price">29$</h2>
+              <h4 class="monthly-prising">Monthly</h4>
+              <p class="prising-para">
+                Discover your way to effortless weight loss, vibrant health
+              </p>
+              <div class="prising-btn">
+                <a class="prising-btn-a" href="#">PURCHASE</a>
+              </div>
+            </div>
+          </div>
+          <div id="prising-column-3" class="prising-column">
+            <div class="prising-column-second-div">
+              <h2 class="prising-name">Business</h2>
+              <h2 class="price">69$</h2>
+              <h4 class="monthly-prising">Monthly</h4>
+              <p class="prising-para">
+                Discover your way to effortless weight loss, vibrant health
+              </p>
+              <div class="prising-btn">
+                <a class="prising-btn-a" href="#">PURCHASE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2021, Buenos días all right recived</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
